@@ -112,15 +112,15 @@ local globalKeys =
     {modkey},
     'c',
     function()
-      awful.util.spawn(apps.default.editor)
+      awful.util.spawn("atom")
     end,
-    {description = 'open a text/code editor', group = 'launcher'}
+    {description = 'atom', group = 'launcher'}
   ),
   awful.key(
     {modkey},
     'b',
     function()
-      awful.util.spawn(apps.default.browser)
+      awful.util.spawn("firefox")
     end,
     {description = 'open a browser', group = 'launcher'}
   ),
@@ -228,6 +228,7 @@ local globalKeys =
     end,
     {description = 'restore minimized', group = 'client'}
   ),
+  
   -- Dropdown application
   awful.key(
     {modkey},
@@ -376,7 +377,7 @@ local globalKeys =
     {modkey},
     'e',
     function()
-      awful.util.spawn(apps.default.files)
+      awful.util.spawn("nemo")
     end,
     {description = 'Default File Manager launch', group = 'hotkeys'}
   )
@@ -453,5 +454,8 @@ for i = 1, 9 do
     )
   )
 end
+
+
+
 
 return globalKeys

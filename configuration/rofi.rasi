@@ -6,24 +6,24 @@
 configuration {
 	display-drun:    "Activate";
 	display-run:     "Execute";
-	show-icons:      true;	
+	show-icons:      true;
 	sidebar-mode:    true;
 }
 
 * {
-	background-color:            rgb(18, 30, 37);
-	text-color:                  #d3d7cf;
+	background-color:            rgb(59,59,59);
+	text-color:                  rgb(227,227,227);
 	selbg:                       rgb(0, 86, 136);
 	actbg:                       rgb(22, 37, 46);
 	urgbg:                       #e53935;
-	winbg:			     #26c6da;
+	winbg:			                rgb(255, 255, 255);
 
 	selected-normal-foreground:  @winbg;
 	normal-foreground:           @text-color;
-	selected-normal-background:  @actbg;
-	normal-background:           @background-color;
+	selected-normal-background:  rgb(117,117,117);
+	normal-background:           rgb(59,59,59);
 
-	selected-urgent-foreground:  @background-color;
+	selected-urgent-foreground:  rgb(64, 64, 64);
 	urgent-foreground:           @text-color;
 	selected-urgent-background:  @urgbg;
 	urgent-background:           @background-color;
@@ -31,7 +31,7 @@ configuration {
 	selected-active-foreground:  @winbg;
 	active-foreground:           @text-color;
 	selected-active-background:  @actbg;
-	active-background:           @selbg;
+	active-background:           rgb(252, 252, 252);
 
 	line-margin:                 2;
 	line-padding:                2;
@@ -71,11 +71,11 @@ inputbar {
      children: [ entry ];
 }
 
-textbox-prompt-colon {                                                
-     text-color: inherit;                                              
-     expand: false;                                                    
+textbox-prompt-colon {
+     text-color: inherit;
+     expand: false;
      margin: 0 0.3em 0em 0em;
- }  
+ }
 
 listview {
 	spacing: 0em;
@@ -83,7 +83,7 @@ listview {
 	cycle:   true;
 }
 
-element { 
+element {
 	padding: 16px;
 	border:  0 0 0 5px solid;
 }
@@ -91,7 +91,7 @@ element {
 entry {
 	expand:         true;
 	text-color:     @normal-foreground;
-	background-color: rgb(25, 41, 51);
+	background-color: rgb(117, 117, 117);
 	vertical-align: 1;
 	padding:        12px;
 	font:            "Roboto medium 13";

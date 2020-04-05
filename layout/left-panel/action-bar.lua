@@ -10,10 +10,10 @@ local clickable_container = require('widget.material.clickable-container')
 
 return function(screen, panel, action_bar_width)
   -- Clock / Calendar 24h format
-  local textclock = wibox.widget.textclock('<span font="Roboto Mono bold 11">%H\n%M</span>')
+--  local textclock = wibox.widget.textclock('<span font="Roboto Mono bold 11">%H\n%M</span>')
 
   -- Clock / Calendar 12AM/PM fornat
-  -- local textclock = wibox.widget.textclock('<span font="Roboto Mono bold 11">%I\n%M</span>\n<span font="Roboto Mono bold 9">%p</span>')
+   local textclock = wibox.widget.textclock('<span font="Roboto Mono bold 11">%I\n%M</span>\n<span font="Roboto Mono bold 9">%p</span>')
   -- textclock.forced_height = 56
 
   -- Add a calendar (credits to kylekewley for the original code)
@@ -91,10 +91,12 @@ return function(screen, panel, action_bar_width)
       layout = wibox.layout.fixed.vertical,
       wibox.container.margin(systray, dpi(10), dpi(10)),
       --require('widget.package-updater'),
-      --require('widget.wifi'),
+      require('widget.wifi'),
       require('widget.battery'),
-      -- Clock
+      
+            --Clock
       --clock_widget
     }
+
   }
 end
