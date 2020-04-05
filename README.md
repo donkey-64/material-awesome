@@ -35,7 +35,7 @@ An almost desktop environment made with [AwesomeWM](https://awesomewm.org/) foll
 - [Rofi](https://github.com/DaveDavenport/rofi) for the app launcher - Arch install: rofi
 - [Compton](https://github.com/tryone144/compton) for the compositor (blur and animations) Arch install: compton
 - [i3lock](https://github.com/meskarune/i3lock-fancy) the lockscreen application Arch Install: i3lock
-- [xclip](https://github.com/astrand/xclip) for copying screenshots to clipboard 
+- [xclip](https://github.com/astrand/xclip) for copying screenshots to clipboard
 - __gnome-keyring__ and a __policykit-agent__ (by default policykit-1-gnome is enabled)
 - (Optional) __qt5-styles-gtk2__ or __qt5-styleplugins-git__ for making QT and KDE applications look the same as gnome applications
 - (Optional) [Materia](https://github.com/nana-4/materia-theme) as GTK theme - Arch Install: materia-theme
@@ -47,7 +47,7 @@ An almost desktop environment made with [AwesomeWM](https://awesomewm.org/) foll
 ### 2) Clone the configuration
 
 ```
-git clone https://github.com/ChrisTitusTech/material-awesome.git ~/.config/awesome
+git clone https://github.com/EthanMax64/material-awesome.git ~/.config/awesome
 ```
 
 > Awesome 4.3 is so new that most of the distributions have not updated it yet. If you want to install this config on Awesome 4.2 (current version on depo) use the specific awesome-4.2 branch (not in development by me)
