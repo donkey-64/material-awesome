@@ -118,6 +118,14 @@ local globalKeys =
   ),
   awful.key(
     {modkey},
+    'v',
+    function()
+      awful.util.spawn("spotify")
+    end,
+    {description = 'spotify', group = 'launcher'}
+  ),
+  awful.key(
+    {modkey},
     'b',
     function()
       awful.util.spawn("firefox")
@@ -228,7 +236,7 @@ local globalKeys =
     end,
     {description = 'restore minimized', group = 'client'}
   ),
-  
+
   -- Dropdown application
   awful.key(
     {modkey},
